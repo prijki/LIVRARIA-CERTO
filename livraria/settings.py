@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'core',
     "rest_framework",
     "corsheaders",
+    "rest_framework_simplejwt",
 ]
 
 MIDDLEWARE = [
@@ -76,6 +77,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'livraria.wsgi.application'
 
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+        "rest_framework.permissions.DjangoModelPermissions",
+    ],
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    )
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
