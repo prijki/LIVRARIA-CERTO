@@ -2,9 +2,10 @@ from django.db import models
 
 from media.models import Image
 
+from .editora import Editora
 from .autor import Autor
 from .categoria import Categoria
-from .editora import Editora
+
 from rest_framework.serializers import ModelSerializer, SlugRelatedField
 
 
