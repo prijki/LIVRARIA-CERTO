@@ -1,15 +1,14 @@
 from django.db import models
 
-from media.models import Image
-
-from .editora import Editora
-from .autor import Autor
-from .categoria import Categoria
-
 from rest_framework.serializers import ModelSerializer, SlugRelatedField
 
-
+from media.models import Image
 from media.serializers import ImageSerializer
+
+from .autor import Autor
+from .categoria import Categoria
+from .editora import Editora
+
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=255)
