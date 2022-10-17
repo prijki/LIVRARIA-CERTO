@@ -1,0 +1,73 @@
+[
+{
+  "model": "core.autor",
+  "pk": 1,
+  "fields": {
+    "nome": "Carlos Henrique de Fraga Barbosa",
+    "email": "carlos.fraga2004@gmail.com"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 1,
+  "fields": {
+    "descricao": "Romance"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 1,
+  "fields": {
+    "nome": "amada",
+    "site": "http://amadaeditora.com.br"
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 1,
+  "fields": {
+    "titulo": "Coração Que Bate Bate",
+    "isbn": "1465475241",
+    "quantidade": 20,
+    "preco": "45.00",
+    "categoria": 1,
+    "editora": 1,
+    "capa": 1,
+    "autores": [
+      1
+    ]
+  }
+},
+{
+  "model": "core.usuario",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$pAB3yJCCnAiW11c2sGdXBg$aY5oQNe7IC0xghS5lbPa4XyDfeCTh3IB8jKwGPF1a2c=",
+    "last_login": "2022-10-17T11:35:49.002Z",
+    "is_superuser": true,
+    "username": "kaue",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-10T11:42:12.580Z",
+    "cpf": "",
+    "telefone": null,
+    "data_nascimento": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "media.image",
+  "pk": 1,
+  "fields": {
+    "attachment_key": "5d98b798-2e6b-46f0-9b21-c3f0a68930b5",
+    "public_id": "7670a3b6-b790-4962-a781-a48edecf72eb",
+    "file": "images/7670a3b6-b790-4962-a781-a48edecf72eb.jpg",
+    "description": "Coraçãozinho",
+    "uploaded_on": "2022-10-10T12:00:02.424Z"
+  }
+}
+]
