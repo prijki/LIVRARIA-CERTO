@@ -9,7 +9,10 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
 )
 from rest_framework.routers import DefaultRouter
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView, 
+    TokenRefreshView
+)
 
 from core.views import AutorViewSet, CategoriaViewSet, EditoraViewSet, LivroViewSet
 from media.router import router as media_router
